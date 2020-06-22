@@ -1,0 +1,344 @@
+*{
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    font-size: normal;
+    list-style: none;
+}
+a{
+    color: #000;
+    text-decoration: none;
+
+}
+
+body{
+    font-family: sans-serif;
+}
+p{
+    font-family: sans-serif;
+    letter-spacing: 3px;
+}
+h3{
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+
+h2{
+    letter-spacing: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+/* flex property */
+
+.d-flex-c{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    background-color: blanchedalmond;
+}
+.d-flex-r{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+.justify-content-space-around{
+    justify-content: space-around;
+   
+}
+
+.reverse-wrap{
+    flex-wrap: wrap-reverse;
+}
+.one-half{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+/* spacing */
+.p-1{
+    padding:1rem;
+}
+/* spacing */
+.m-1{
+    margin:1rem;
+}
+/* spacing */
+.m-4{
+    margin:4rem;
+}
+.my-1{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.my-2{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.bg-landing{
+    background: url('landing.jpg');
+    background-size: cover;
+    min-height: 800px;
+}
+
+#landing p{
+    color: white;
+
+}
+#landing .over-lay{
+    background-color: rgba(0, 0, 0, 0.4);
+    min-height: 800px;
+}
+.banner-text h1{
+    font-size: 7rem;
+    font-weight: 100;
+    line-height: 1;
+    background-color: white;
+    max-width: max-content;
+    /* max-width: web-kit max-content; */
+    position: relative;
+    margin-bottom: 1rem;
+}
+#landing .wrapper{
+    margin: 8rem;
+    margin-top: 0;
+   
+    padding-top: 8rem;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-justify{
+    text-align: justify;
+
+}
+.font-md{
+    font-size: 1.5rem;
+}
+
+.text-container{
+    padding: 3rem;
+}
+
+/* buttons */
+.btn{
+    display:inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 25px;
+    border: 1px solid red;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+.btn , .btn.inverse:hover{
+    /* color: white; */
+    background-color: #3CB371;
+    border-color: cyan;
+    transition: 0.3s ease;
+    width: 30%;
+}
+
+.btn:hover , .btn.inverse{
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    transition: 0.3sec ease;
+
+}
+
+/* image hover effect */
+
+.hovereffect{
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: centers;
+    text-transform: uppercase;
+}
+
+.hovereffect .overlay{
+    position: absolute;
+    overflow: hidden;
+    height: 80%;
+    width: 80%;
+    left: 10%;
+    top: 10%; 
+    border-bottom: 1px solid cyan;
+    border-top: 1px solid cyan;
+    transition: opacity 0.35s , transform 0.35s;
+    transform: scale(0,1); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+.hovereffect:hover .overlay{
+    opacity: 1;
+    transform: scale(1);
+}
+.hovereffect:hover img{
+    display: block;
+    position: relative;
+    transition: all 0.35s;
+}
+
+.hovereffect:hover img{
+    filter: brightness(0.5);
+}
+
+.hovereffect h2 {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-size: 2rem;
+    background-color: transparent;
+    padding: 1em 0;
+    color: white;
+}
+.hovereffect p {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-size: 1rem;
+    background-color: transparent;
+    padding: 0.5em 0;
+    color: white;
+}
+.hovereffect p {
+    display: flex;
+    justify-content: center;
+}
+
+/* social icons */
+.bg-grey{
+    background-color: gainsboro;
+}
+#social li i{
+    font-size: 2rem;
+    margin: 1rem;
+}
+#social li i.fa-facebook{
+ color: blue;  
+}
+#social li i.fa-twitter{
+ color:rgb(48, 18, 128);  
+}
+#social li i.fa-linkdeb{
+ color: rgb(32, 184, 65);  
+}
+#social li i.fa-google{
+ color: rgb(180, 192, 74);  
+}
+#social li i.fa-instagram{
+ color: rgb(45, 37, 156);  
+}
+#social li i.fa-youtube{
+ color: rgba(50, 95, 190, 0.308);  
+}
+#social li i.fa-google-plus{
+ color: rgb(255, 34, 34);  
+}
+
+#social li:hover{
+    color: black;
+    transition: 0.5s ease;
+}
+
+/* media query */
+
+@media screen and (max-width:992px){
+    p{
+        font-size: 0.85rem;
+    }
+    /* h1{
+        font-size: 1rem;
+    } */
+    h3{
+        font-size: 2rem;
+    }
+    .banner-text h1{
+        font-size: 5rem !important;
+    }
+
+}
+
+@media screen and (max-width:768px){
+    p{
+        font-size: 0.75rem;
+    }
+    
+    h3{
+        font-size: 2rem;
+    }
+    .banner-text h1{
+        font-size: 4rem !important;
+    }
+    .one-half{
+        width: 100%;
+    }
+}
+@media screen and (max-width:425px){
+    p{
+        font-size: 0.4rem;
+    }
+   
+    h3{
+        font-size: 2rem;
+    }
+    .banner-text h1{
+        /* background-color: #fff; */
+        /* max-width: max-content; */
+        font-size: 1.5rem !important;
+    }
+    .one-half{
+        width: 100%;
+    }
+
+    
+    .hovereffect h2 {
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        font-size: 1rem;
+        background-color: transparent;
+        padding: 1em 0;
+        color: white;
+    }
+    .hovereffect p {
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        font-size: 0.5rem;
+        background-color: transparent;
+        padding: 0.5em 0;
+        color: white;
+    }
+    .btn{
+        width: 100%;
+    }
+    .banner-text h1{
+        display:inline-block;
+      
+    }
+  
+}
+@media screen and (max-width:320px)
+{
+    .banner-button .btn{
+        width: 150%;
+    }
+}
